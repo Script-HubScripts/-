@@ -1,0 +1,1136 @@
+if _G.typicalisskid ~= true then
+    _G.typicalisskid = true
+    game:GetService("RunService").Heartbeat:Connect(function()
+       workspace.FallenPartsDestroyHeight = 0/0
+       settings().Physics.AllowSleep = false
+       game:GetService("Players").LocalPlayer.ReplicationFocus = workspace
+       settings().Physics.ThrottleAdjustTime = 6 - math.huge
+						sethiddenproperty(game:FindFirstChildOfClass("Players").LocalPlayer,"SimulationRadius",1000)
+
+    setsimulationradius(1000,1000)
+    end)
+    end
+
+local UI_1 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Glow = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local TabButtons = Instance.new("Frame")
+local List = Instance.new("UIListLayout")
+local Home = Instance.new("TextButton")
+local Tab = Instance.new("TextButton")
+local HatScriptButton = Instance.new("TextButton")
+local ReanimButton = Instance.new("TextButton")
+local Tabs = Instance.new("Frame")
+local FreeScripts = Instance.new("ScrollingFrame")
+local HatScripts = Instance.new("ScrollingFrame")
+local Reanimations = Instance.new("ScrollingFrame")
+local List2 = Instance.new("UIListLayout")
+local Pad = Instance.new("UIPadding")
+local KrystalDance = Instance.new("TextButton")
+local GaleFighter = Instance.new("TextButton")
+local Simple = Instance.new("TextButton")
+local Home_2 = Instance.new("ScrollingFrame")
+local welcomemessage = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local Line = Instance.new("Frame")
+local memes = Instance.new("TextLabel")
+
+UI_1.Name = "UI_1"
+UI_1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UI_1.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = UI_1
+Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.218978107, 0, 0.175438598, 0)
+Main.Size = UDim2.new(0, 581, 0, 333)
+
+Glow.Name = "Glow"
+Glow.Parent = Main
+Glow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Glow.BackgroundTransparency = 1.000
+Glow.BorderSizePixel = 0
+Glow.Position = UDim2.new(0, -15, 0, -15)
+Glow.Size = UDim2.new(1, 30, 1, 30)
+Glow.ZIndex = 0
+Glow.Image = "rbxassetid://282610381"
+Glow.ImageColor3 = Color3.fromRGB(15, 15, 15)
+Glow.ScaleType = Enum.ScaleType.Slice
+Glow.SliceCenter = Rect.new(20, 20, 280, 280)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0200573057, 0, 0, 0)
+Title.Size = UDim2.new(0, 136, 0, 40)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "BOZO HUB"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 20.000
+Title.TextWrapped = true
+
+TabButtons.Name = "TabButtons"
+TabButtons.Parent = Main
+TabButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabButtons.BackgroundTransparency = 1.000
+TabButtons.Position = UDim2.new(0, 0, 0.120120123, 0)
+TabButtons.Size = UDim2.new(0, 117, 0, 293)
+
+List.Name = "List"
+List.Parent = TabButtons
+List.SortOrder = Enum.SortOrder.LayoutOrder
+List.Padding = UDim.new(0, 5)
+
+Home.Name = "Home"
+Home.Parent = TabButtons
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Size = UDim2.new(0, 117, 0, 29)
+Home.Font = Enum.Font.GothamSemibold
+Home.Text = "Main"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 14.000
+
+
+Tab.Name = "Tab"
+Tab.Parent = TabButtons
+Tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab.BackgroundTransparency = 1.000
+Tab.Size = UDim2.new(0, 117, 0, 29)
+Tab.Font = Enum.Font.GothamSemibold
+Tab.Text = "Scripts"
+Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab.TextSize = 14.000
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(0.20137693, 0, 0.120120123, 0)
+Tabs.Size = UDim2.new(0, 464, 0, 293)
+
+HatScriptButton.Name = "HatScriptButton"
+HatScriptButton.Parent = TabButtons
+HatScriptButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HatScriptButton.BackgroundTransparency = 1.000
+HatScriptButton.Size = UDim2.new(0, 117, 0, 29)
+HatScriptButton.Font = Enum.Font.GothamSemibold
+HatScriptButton.Text = "FE"
+HatScriptButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HatScriptButton.TextSize = 14.000
+
+ReanimButton.Name = "ReanimButton"
+ReanimButton.Parent = TabButtons
+ReanimButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReanimButton.BackgroundTransparency = 1.000
+ReanimButton.Size = UDim2.new(0, 117, 0, 29)
+ReanimButton.Font = Enum.Font.GothamSemibold
+ReanimButton.Text = "Animations"
+ReanimButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReanimButton.TextSize = 14.000
+
+Home.MouseButton1Click:Connect(function()
+	for i,v in next, Tabs:GetChildren() do
+		if v.Name == "Home" then
+			v.Visible = true
+		elseif v.Name ~= "Home" then
+			v.Visible = false
+		end
+	end
+end)
+Tab.MouseButton1Click:Connect(function()
+	for i,v in next, Tabs:GetChildren() do
+		if v.Name == "FreeScripts" then
+			v.Visible = true
+		elseif v.Name ~= "FreeScripts" then
+			v.Visible = false
+		end
+	end
+end)
+
+HatScriptButton.MouseButton1Click:Connect(function()
+	for i,v in next, Tabs:GetChildren() do
+		if v.Name == "HatScripts" then
+			v.Visible = true
+		elseif v.Name ~= "HatScripts" then
+			v.Visible = false
+		end
+	end
+end)
+ReanimButton.MouseButton1Click:Connect(function()
+	for i,v in next, Tabs:GetChildren() do
+		if v.Name == "Reanimations" then
+			v.Visible = true
+		elseif v.Name ~= "Reanimations" then
+			v.Visible = false
+		end
+	end
+end)
+
+FreeScripts.Name = "FreeScripts"
+FreeScripts.Parent = Tabs
+FreeScripts.Active = true
+FreeScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FreeScripts.BackgroundTransparency = 1.000
+FreeScripts.BorderSizePixel = 0
+FreeScripts.Size = UDim2.new(0, 464, 0, 293)
+FreeScripts.BottomImage = ""
+FreeScripts.CanvasSize = UDim2.new(0, 0, 5, 0)
+FreeScripts.ScrollBarThickness = 3
+FreeScripts.Visible = false
+FreeScripts.TopImage = ""
+
+HatScripts.Name = "HatScripts"
+HatScripts.Parent = Tabs
+HatScripts.Active = true
+HatScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HatScripts.BackgroundTransparency = 1.000
+HatScripts.BorderSizePixel = 0
+HatScripts.Size = UDim2.new(0, 464, 0, 293)
+HatScripts.BottomImage = ""
+HatScripts.CanvasSize = UDim2.new(0, 0, 5, 0)
+HatScripts.ScrollBarThickness = 3
+HatScripts.Visible = false
+HatScripts.TopImage = ""
+
+HatScripts.Name = "HatScripts"
+HatScripts.Parent = Tabs
+HatScripts.Active = true
+HatScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HatScripts.BackgroundTransparency = 1.000
+HatScripts.BorderSizePixel = 0
+HatScripts.Size = UDim2.new(0, 464, 0, 293)
+HatScripts.BottomImage = ""
+HatScripts.CanvasSize = UDim2.new(0, 0, 5, 0)
+HatScripts.ScrollBarThickness = 3
+HatScripts.Visible = false
+HatScripts.TopImage = ""
+
+Reanimations.Name = "Reanimations"
+Reanimations.Parent = Tabs
+Reanimations.Active = true
+Reanimations.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reanimations.BackgroundTransparency = 1.000
+Reanimations.BorderSizePixel = 0
+Reanimations.Size = UDim2.new(0, 464, 0, 293)
+Reanimations.BottomImage = ""
+Reanimations.CanvasSize = UDim2.new(0, 0, 5, 0)
+Reanimations.ScrollBarThickness = 3
+Reanimations.Visible = false
+Reanimations.TopImage = ""
+
+List2.Name = "List2"
+List2.Parent = FreeScripts
+List2.SortOrder = Enum.SortOrder.LayoutOrder
+List2.Padding = UDim.new(0, 5)
+
+Pad.Name = "Pad"
+Pad.Parent = FreeScripts
+Pad.PaddingBottom = UDim.new(0, 5)
+Pad.PaddingLeft = UDim.new(0, 5)
+Pad.PaddingRight = UDim.new(0, 5)
+Pad.PaddingTop = UDim.new(0, 5)
+
+function AddPadding(item)
+local List2 = Instance.new("UIListLayout")
+local Pad = Instance.new("UIPadding")
+List2.Name = "List2"
+List2.Parent = item
+List2.SortOrder = Enum.SortOrder.LayoutOrder
+List2.Padding = UDim.new(0, 5)
+
+Pad.Name = "Pad"
+Pad.Parent = item
+Pad.PaddingBottom = UDim.new(0, 5)
+Pad.PaddingLeft = UDim.new(0, 5)
+Pad.PaddingRight = UDim.new(0, 5)
+Pad.PaddingTop = UDim.new(0, 5)
+end
+AddPadding(Reanimations)
+AddPadding(HatScripts)
+
+KrystalDance.Name = "KrystalDance"
+KrystalDance.Parent = FreeScripts
+KrystalDance.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+KrystalDance.BorderSizePixel = 0
+KrystalDance.Position = UDim2.new(0.0107758623, 0, 0.0170648471, 0)
+KrystalDance.Size = UDim2.new(0, 451, 0, 34)
+KrystalDance.AutoButtonColor = false
+KrystalDance.Font = Enum.Font.Gotham
+KrystalDance.Text = "Krystal Dance"
+KrystalDance.TextColor3 = Color3.fromRGB(255, 255, 255)
+KrystalDance.TextSize = 14.000
+
+GaleFighter.Name = "GaleFighter"
+GaleFighter.Parent = FreeScripts
+GaleFighter.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GaleFighter.BorderSizePixel = 0
+GaleFighter.Position = UDim2.new(0.0107758623, 0, 0.0170648471, 0)
+GaleFighter.Size = UDim2.new(0, 451, 0, 34)
+GaleFighter.AutoButtonColor = false
+GaleFighter.Font = Enum.Font.Gotham
+GaleFighter.Text = "Gale Fighter"
+GaleFighter.TextColor3 = Color3.fromRGB(255, 255, 255)
+GaleFighter.TextSize = 14.000
+
+Simple.Name = "Simple"
+Simple.Parent = Reanimations
+Simple.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Simple.BorderSizePixel = 0
+Simple.Position = UDim2.new(0, 0, 0, 0)
+Simple.Size = UDim2.new(0, 451, 0, 34)
+Simple.AutoButtonColor = false
+Simple.Font = Enum.Font.Gotham
+Simple.Text = "Simple"
+Simple.TextColor3 = Color3.fromRGB(255, 255, 255)
+Simple.TextSize = 14.000
+
+function AddButton(Name, tab, callback)
+callback = callback or function() end
+local button = Instance.new("TextButton")
+button.Name = Name
+button.Parent = tab
+button.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+button.BorderSizePixel = 0
+button.Position = UDim2.new(0, 0, 0, 0)
+button.Size = UDim2.new(0, 451, 0, 34)
+button.AutoButtonColor = false
+button.Font = Enum.Font.Gotham
+button.Text = Name
+button.TextColor3 = Color3.fromRGB(255, 255, 255)
+button.TextSize = 14.000
+button.MouseButton1Click:Connect(function()
+pcall(callback)
+end)
+end
+
+Home_2.Name = "Home"
+Home_2.Parent = Tabs
+Home_2.Active = true
+Home_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BackgroundTransparency = 1.000
+Home_2.BorderSizePixel = 0
+Home_2.Size = UDim2.new(0, 464, 0, 293)
+Home_2.Visible = true
+Home_2.BottomImage = ""
+Home_2.CanvasSize = UDim2.new(0, 0, 5, 0)
+Home_2.ScrollBarThickness = 0
+Home_2.ScrollingEnabled = false
+Home_2.TopImage = ""
+
+welcomemessage.Name = "welcomemessage"
+welcomemessage.Parent = Home_2
+welcomemessage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+welcomemessage.BackgroundTransparency = 1.000
+welcomemessage.Position = UDim2.new(0.284482747, 0, 0.0156996585, 0)
+welcomemessage.Size = UDim2.new(0, 200, 0, 50)
+welcomemessage.Font = Enum.Font.GothamBlack
+welcomemessage.Text = "WELCOME TO BOZO HUB"
+welcomemessage.TextColor3 = Color3.fromRGB(255, 255, 255)
+welcomemessage.TextSize = 24.000
+
+TextLabel.Parent = Home_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.284482747, 0, 0.0430034138, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "Bozo Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Home_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.284482747, 0, 0.0689419806, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "info"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = Home_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.284482747, 0, 0.0976109207, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 20)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "BozoHub on top"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 20.000
+
+TextLabel_4.Parent = Home_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.284482747, 0, 0.119453922, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 20)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "Rxl#0001"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 20.000
+
+TextLabel_5.Parent = Home_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.284482747, 0, 0.1447099, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 20)
+TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Text = "DtbVoided is a skid"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 20.000
+
+Line.Name = "Line"
+Line.Parent = Main
+Line.BackgroundColor3 = Color3.fromRGB(85, 255, 127)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.114114121, 0)
+Line.Size = UDim2.new(0, 581, 0, 2)
+
+memes.Name = "memes"
+memes.Parent = Main
+memes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+memes.BackgroundTransparency = 1.000
+memes.Position = UDim2.new(0.330464691, 0, 0.0210210215, 0)
+memes.Size = UDim2.new(0, 197, 0, 25)
+memes.Font = Enum.Font.SourceSansItalic
+memes.Text = "Enjoy Using Bozo Hub"
+memes.TextColor3 = Color3.fromRGB(255, 255, 255)
+memes.TextSize = 20.000
+
+-- Scripts:
+
+local function JZNMCE_fake_script() -- Main.Dragify 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+
+	dragify(script.Parent)
+end
+coroutine.wrap(JZNMCE_fake_script)()
+local function EGTRRF_fake_script() -- memes.LocalScript 
+	local script = Instance.new('LocalScript', memes)
+
+	while true do
+		
+		script.Parent.Text = "Dtb Imagine calling Me A Skid"
+		wait(5)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 1})	Tween:Play()
+		wait(1)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 0})	Tween:Play()
+		script.Parent.Text = "dtbVoided is shit"
+		wait(5)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 1})	Tween:Play()
+		wait(1)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 0})	Tween:Play()
+		script.Parent.Text ="Bozo Hub Release"
+		wait(5)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 1})	Tween:Play()
+		wait(1)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 0})	Tween:Play()
+		script.Parent.Text = "Bozo Hub"
+		wait(5)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 1})	Tween:Play()
+		wait(1)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 0})	Tween:Play()
+		script.Parent.Text = "BOZO HUB ON TOP"
+		wait(5)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 1})	Tween:Play()
+		wait(1)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 0})	Tween:Play()
+		script.Parent.Text = "Bozo Hub on top"
+		wait(5)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 1})	Tween:Play()
+		wait(1)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 0})	Tween:Play()
+		script.Parent.Text = "enjoy using Bozo Hub"
+		wait(5)
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 1})	Tween:Play()
+		wait(1)
+		script.Parent.Text = "Rxl#0001"
+		local Tween = game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(1), {TextTransparency = 0})	Tween:Play()
+    end
+end
+coroutine.wrap(EGTRRF_fake_script)()
+
+function simple_()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/mgamingpro/TypicalHub/main/simple"))()
+end
+
+function Check()
+    if _G.scriptran then
+        return
+    end
+end
+
+KrystalDance.MouseButton1Click:Connect(function()
+	Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/krystal.lua"))()
+end)
+
+GaleFighter.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/gale.lua"))()
+end)
+
+local Foxy = Instance.new("TextButton")
+Foxy.Name = "Foxy"
+Foxy.Parent = FreeScripts
+Foxy.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Foxy.BorderSizePixel = 0
+Foxy.Position = UDim2.new(0, 0, 0, 0)
+Foxy.Size = UDim2.new(0, 451, 0, 34)
+Foxy.AutoButtonColor = false
+Foxy.Font = Enum.Font.Gotham
+Foxy.Text = "Foxy"
+Foxy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Foxy.TextSize = 14.000
+Foxy.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/foxy.lua"))()
+end)
+
+local Killbot = Instance.new("TextButton")
+Killbot.Name = "Killbot"
+Killbot.Parent = FreeScripts
+Killbot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Killbot.BorderSizePixel = 0
+Killbot.Position = UDim2.new(0, 0, 0, 0)
+Killbot.Size = UDim2.new(0, 451, 0, 34)
+Killbot.AutoButtonColor = false
+Killbot.Font = Enum.Font.Gotham
+Killbot.Text = "Killbot"
+Killbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Killbot.TextSize = 14.000
+
+Killbot.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/killbot.lua"))()
+end)
+
+Simple.MouseButton1Click:Connect(function()
+	simple_()
+end)
+
+local JEVIL = Instance.new("TextButton")
+JEVIL.Name = "JEVIL"
+JEVIL.Parent = HatScripts
+JEVIL.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+JEVIL.BorderSizePixel = 0
+JEVIL.Position = UDim2.new(0, 0, 0, 0)
+JEVIL.Size = UDim2.new(0, 451, 0, 34)
+JEVIL.AutoButtonColor = false
+JEVIL.Font = Enum.Font.Gotham
+JEVIL.Text = "JEVIL"
+JEVIL.TextColor3 = Color3.fromRGB(255, 255, 255)
+JEVIL.TextSize = 14.000
+JEVIL.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/JEVIL.lua"))()
+end)
+
+
+
+local Nebula = Instance.new("TextButton")
+Nebula.Name = "Nebula"
+Nebula.Parent = HatScripts
+Nebula.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Nebula.BorderSizePixel = 0
+Nebula.Position = UDim2.new(0, 0, 0, 0)
+Nebula.Size = UDim2.new(0, 451, 0, 34)
+Nebula.AutoButtonColor = false
+Nebula.Font = Enum.Font.Gotham
+Nebula.Text = "Nebula"
+Nebula.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nebula.TextSize = 14.000
+Nebula.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/nebula.lua"))()
+end)
+
+local neptunian = Instance.new("TextButton")
+neptunian.Name = "neptunian"
+neptunian.Parent = HatScripts
+neptunian.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+neptunian.BorderSizePixel = 0
+neptunian.Position = UDim2.new(0, 0, 0, 0)
+neptunian.Size = UDim2.new(0, 451, 0, 34)
+neptunian.AutoButtonColor = false
+neptunian.Font = Enum.Font.Gotham
+neptunian.Text = "Neptunian V"
+neptunian.TextColor3 = Color3.fromRGB(255, 255, 255)
+neptunian.TextSize = 14.000
+neptunian.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/neptunian.lua"))()
+end)
+
+local Universal = Instance.new("TextButton")
+Universal.Name = "Universal"
+Universal.Parent = HatScripts
+Universal.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Universal.BorderSizePixel = 0
+Universal.Position = UDim2.new(0, 0, 0, 0)
+Universal.Size = UDim2.new(0, 451, 0, 34)
+Universal.AutoButtonColor = false
+Universal.Font = Enum.Font.Gotham
+Universal.Text = "Universal"
+Universal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Universal.TextSize = 14.000
+Universal.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/universal.lua"))()
+end)
+
+local achromaticv2 = Instance.new("TextButton")
+achromaticv2.Name = "achromaticv2"
+achromaticv2.Parent = HatScripts
+achromaticv2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+achromaticv2.BorderSizePixel = 0
+achromaticv2.Position = UDim2.new(0, 0, 0, 0)
+achromaticv2.Size = UDim2.new(0, 451, 0, 34)
+achromaticv2.AutoButtonColor = false
+achromaticv2.Font = Enum.Font.Gotham
+achromaticv2.Text = "Achromatic V2"
+achromaticv2.TextColor3 = Color3.fromRGB(255, 255, 255)
+achromaticv2.TextSize = 14.000
+achromaticv2.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/achromaticv2.lua"))()
+end)
+
+local wao = Instance.new("TextButton")
+wao.Name = "wao"
+wao.Parent = FreeScripts
+wao.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+wao.BorderSizePixel = 0
+wao.Position = UDim2.new(0, 0, 0, 0)
+wao.Size = UDim2.new(0, 451, 0, 34)
+wao.AutoButtonColor = false
+wao.Font = Enum.Font.Gotham
+wao.Text = "WHAT ANOTHER ONE"
+wao.TextColor3 = Color3.fromRGB(255, 255, 255)
+wao.TextSize = 14.000
+wao.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/typicalhub/main/wao.lua"))()
+end)
+
+local bot = Instance.new("TextButton")
+bot.Name = "bot"
+bot.Parent = Reanimations
+bot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+bot.BorderSizePixel = 0
+bot.Position = UDim2.new(0, 0, 0, 0)
+bot.Size = UDim2.new(0, 451, 0, 34)
+bot.AutoButtonColor = false
+bot.Font = Enum.Font.Gotham
+bot.Text = "Free Bot"
+bot.TextColor3 = Color3.fromRGB(255, 255, 255)
+bot.TextSize = 14.000
+bot.MouseButton1Click:Connect(function()
+ local hatnameclone = {}
+    for _,v in next, game:FindFirstChildOfClass("Players").LocalPlayer["Character"]:GetChildren() do
+        if v:IsA("Accessory") then
+            if hatnameclone[v.Name] then
+                if hatnameclone[v.Name] == "s" then
+                    hatnameclone[v.Name] = {}
+                end
+                table.insert(hatnameclone[v.Name],v)
+            else
+                hatnameclone[v.Name] = "s"
+            end
+        end
+    end
+    for _,v in pairs(hatnameclone) do
+        if type(v) == "table" then
+            local num = 1
+            for _,w in pairs(v) do
+                w.Name = w.Name..num
+                num = num + 1
+            end
+        end
+    end
+    hatnameclone = nil
+    
+    local CountSCIFIMOVIELOL = 1
+    function attach(Part0,Part1,Position,Angle)
+        local AlignPos = Instance.new('AlignPosition', Part1); AlignPos.Name = "AliP_"..CountSCIFIMOVIELOL
+        AlignPos.ApplyAtCenterOfMass = true;
+        AlignPos.MaxForce = 5772000--67752;
+        AlignPos.MaxVelocity = math.huge/9e110;
+        AlignPos.ReactionForceEnabled = false;
+        AlignPos.Responsiveness = math.huge;
+        AlignPos.RigidityEnabled = false;
+        local AlignOri = Instance.new('AlignOrientation', Part1); AlignOri.Name = "AliO_"..CountSCIFIMOVIELOL
+        AlignOri.MaxAngularVelocity = math.huge/9e110;
+        AlignOri.MaxTorque = 5772000
+        AlignOri.PrimaryAxisOnly = false;
+        AlignOri.ReactionTorqueEnabled = false;
+        AlignOri.Responsiveness = math.huge;
+        AlignOri.RigidityEnabled = false;
+        local AttachmentA=Instance.new('Attachment',Part1); AttachmentA.Name = "AthP_"..CountSCIFIMOVIELOL
+        local AttachmentB=Instance.new('Attachment',Part0); AttachmentB.Name = "AthP_"..CountSCIFIMOVIELOL
+        local AttachmentC=Instance.new('Attachment',Part1); AttachmentC.Name = "AthO_"..CountSCIFIMOVIELOL
+        local AttachmentD=Instance.new('Attachment',Part0); AttachmentD.Name = "AthO_"..CountSCIFIMOVIELOL
+        AttachmentC.Orientation = Angle or Vector3.new(0,0,0)
+        AttachmentA.Position = Position or Vector3.new(0,0,0)
+        AlignPos.Attachment1 = AttachmentA;
+        AlignPos.Attachment0 = AttachmentB;
+        AlignOri.Attachment1 = AttachmentC;
+        AlignOri.Attachment0 = AttachmentD;
+local BodyVelocity = Instance.new("BodyVelocity",Part0)
+    game:GetService("RunService").Heartbeat:Connect(
+        function()
+            Part0.Velocity = Vector3.new(1, -32.435, 1)
+            BodyVelocity.Velocity = Vector3.new(1, -32.435, 1)
+            BodyVelocity.P = math.huge
+        end
+    )
+        CountSCIFIMOVIELOL = CountSCIFIMOVIELOL + 1
+    end
+    local char = game.Players.LocalPlayer.Character
+    char.Archivable = true
+    local clone = char:Clone()
+    clone.Parent = char
+    clone.Head.face.Transparency = 1
+    clone.Name = "Dummy"
+    clone.HumanoidRootPart.CFrame = char.HumanoidRootPart.CFrame
+    clone.HumanoidRootPart.Anchored = false
+    
+    local stepped=game:GetService("RunService").Stepped:connect(function()
+        for i,v in pairs(char:GetDescendants())do
+            if v:IsA("BasePart") then 
+                v.CanCollide=false
+            end
+        end
+    end)
+    
+    for i,v in next, char:GetChildren() do
+        if v:IsA("Accessory") and v:FindFirstChild("Handle") then
+            v.Handle:BreakJoints()
+            local fakehat = clone:FindFirstChild(v.Name)
+            if fakehat then
+                attach(v.Handle, fakehat.Handle)
+                fakehat.Handle.Transparency = 1
+            end
+        end
+    end
+    
+    local tors1 = char["Pal Hair"]
+    tors1.Handle:ClearAllChildren()
+    local tors2 = char["Robloxclassicred"]
+    tors2.Handle:ClearAllChildren()
+    local larm = char.Hat1
+    larm.Handle:ClearAllChildren()
+    local rarm = char["Kate Hair"]
+    rarm.Handle:ClearAllChildren()
+    local lleg = char["Pink Hair"]
+    lleg.Handle:ClearAllChildren()
+    local rleg = char.LavanderHair
+    rleg.Handle:ClearAllChildren()
+    --local head = char.MediHood
+    --head.Handle:BreakJoints()
+    
+    attach(tors1.Handle,clone["Torso"],Vector3.new(0.5,0,0), Vector3.new(90,0,0))
+    attach(tors2.Handle,clone["Torso"],Vector3.new(-0.5,0,0), Vector3.new(90,0,0))
+    attach(larm.Handle,clone["Left Arm"],Vector3.new(0,0,0), Vector3.new(90,0,0))
+    attach(rarm.Handle,clone["Right Arm"],Vector3.new(0,0,0), Vector3.new(90,0,0))
+    attach(lleg.Handle,clone["Left Leg"],Vector3.new(0,0,0), Vector3.new(90,0,0))
+    attach(rleg.Handle,clone["Right Leg"],Vector3.new(0,0,0), Vector3.new(90,0,0))
+    --attach(head.Handle,clone["Head"],Vector3.new(0,0,0), Vector3.new(0,0,0))
+    
+    for i,v in next, clone:GetChildren() do
+        if v:IsA("BasePart") then
+            v.Transparency = 1
+        end
+    end
+    
+    game.Players.LocalPlayer.Character=clone
+    workspace.CurrentCamera.CameraSubject=clone.Humanoid
+    
+    clone.Humanoid.Died:Connect(function()
+        print("Bot Reset")
+        
+        workspace.CurrentCamera.CameraType = Enum.CameraType.Custom
+        
+        game.Players.LocalPlayer.CameraMode="Classic"
+        
+        char:BreakJoints()
+        
+        stepped:Disconnect()
+        
+        clone:Destroy()
+        
+        game.Players.LocalPlayer.Character = char
+    end)
+end)
+
+local pd = Instance.new("TextButton")
+pd.Name = "permadeath"
+pd.Parent = Reanimations
+pd.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+pd.BorderSizePixel = 0
+pd.Position = UDim2.new(0, 0, 0, 0)
+pd.Size = UDim2.new(0, 451, 0, 34)
+pd.AutoButtonColor = false
+pd.Font = Enum.Font.Gotham
+pd.Text = "Death"
+pd.TextColor3 = Color3.fromRGB(255, 255, 255)
+pd.TextSize = 14.000
+pd.MouseButton1Click:Connect(function()
+HumanDied = false
+    local torsopossss = game:FindFirstChildOfClass("Players").LocalPlayer["Character"].Torso.Position
+   	
+    local hatnameclone = {}
+    for _,v in next, game:FindFirstChildOfClass("Players").LocalPlayer["Character"]:GetChildren() do
+        if v:IsA("Accessory") then
+            if hatnameclone[v.Name] then
+                if hatnameclone[v.Name] == "s" then
+                    hatnameclone[v.Name] = {}
+                end
+                table.insert(hatnameclone[v.Name],v)
+            else
+                hatnameclone[v.Name] = "s"
+            end
+        end
+    end
+    for _,v in pairs(hatnameclone) do
+        if type(v) == "table" then
+            local num = 1
+            for _,w in pairs(v) do
+                w.Name = w.Name..num
+                num = num + 1
+            end
+        end
+    end
+    hatnameclone = nil
+
+    
+    
+    local CountSCIFIMOVIELOL = 1
+    function SCIFIMOVIELOL(Part0,Part1,Position,Angle)
+        game['Run Service'].Heartbeat:Connect(function()
+            Part0.Velocity = Vector3.new(1, -32.435, 1)
+        end)
+        local AlignPos = Instance.new('AlignPosition', Part1); AlignPos.Name = "AliP_"..CountSCIFIMOVIELOL
+        AlignPos.ApplyAtCenterOfMass = true;
+        AlignPos.MaxForce = 5772000--67752;
+        AlignPos.MaxVelocity = math.huge/9e110;
+        AlignPos.ReactionForceEnabled = false;
+        AlignPos.Responsiveness = 200;
+        AlignPos.RigidityEnabled = false;
+        local AlignOri = Instance.new('AlignOrientation', Part1); AlignOri.Name = "AliO_"..CountSCIFIMOVIELOL
+        AlignOri.MaxAngularVelocity = math.huge/9e110;
+        AlignOri.MaxTorque = 5772000
+        AlignOri.PrimaryAxisOnly = false;
+        AlignOri.ReactionTorqueEnabled = false;
+        AlignOri.Responsiveness = 200;
+        AlignOri.RigidityEnabled = false;
+        local AttachmentA=Instance.new('Attachment',Part1); AttachmentA.Name = "AthP_"..CountSCIFIMOVIELOL
+        local AttachmentB=Instance.new('Attachment',Part0); AttachmentB.Name = "AthP_"..CountSCIFIMOVIELOL
+        local AttachmentC=Instance.new('Attachment',Part1); AttachmentC.Name = "AthO_"..CountSCIFIMOVIELOL
+        local AttachmentD=Instance.new('Attachment',Part0); AttachmentD.Name = "AthO_"..CountSCIFIMOVIELOL
+        AttachmentC.Orientation = Angle
+        AttachmentA.Position = Position
+        AlignPos.Attachment1 = AttachmentA;
+        AlignPos.Attachment0 = AttachmentB;
+        AlignOri.Attachment1 = AttachmentC;
+        AlignOri.Attachment0 = AttachmentD;
+        CountSCIFIMOVIELOL = CountSCIFIMOVIELOL + 1
+    end
+   
+    game:GetService("Players").LocalPlayer["Character"].Archivable = true 
+        local CloneChar = game:GetService("Players").LocalPlayer["Character"]:Clone()
+        game:GetService("Players").LocalPlayer["Character"].Humanoid.WalkSpeed = 0 
+        game:GetService("Players").LocalPlayer["Character"].Humanoid.JumpPower = 0 
+        game:GetService("Players").LocalPlayer["Character"].Humanoid.AutoRotate = false
+        local FalseChar = Instance.new("Model", workspace); FalseChar.Name = ""
+        Instance.new("Part",FalseChar).Name = "Head" 
+        Instance.new("Part",FalseChar).Name = "Torso" 
+        Instance.new("Humanoid",FalseChar).Name = "Humanoid"
+        game:GetService("Players").LocalPlayer["Character"] = FalseChar
+        game:GetService("Players").LocalPlayer["Character"].Humanoid.Name = "FalseHumanoid"
+        local Clone = game:GetService("Players").LocalPlayer["Character"]:FindFirstChild("FalseHumanoid"):Clone()
+        Clone.Parent = game:GetService("Players").LocalPlayer["Character"]
+        Clone.Name = "Humanoid"
+        game:GetService("Players").LocalPlayer["Character"]:FindFirstChild("FalseHumanoid"):Destroy() 
+        game:GetService("Players").LocalPlayer["Character"].Humanoid.Health = 0 
+        game:GetService("Players").LocalPlayer["Character"] = workspace[game:GetService("Players").LocalPlayer.Name] 
+        wait(5.65) 
+        game:GetService("Players").LocalPlayer["Character"].Humanoid.Health = 0
+        CloneChar.Parent = workspace
+        CloneChar.HumanoidRootPart.CFrame = game:GetService("Players").LocalPlayer["Character"].HumanoidRootPart.CFrame * CFrame.new(0,2,0)
+        wait() 
+        CloneChar.Humanoid.BreakJointsOnDeath = false
+        workspace.Camera.CameraSubject = CloneChar.Humanoid 
+        CloneChar.Name = "non" 
+        CloneChar.Humanoid.DisplayDistanceType = "None"
+        if CloneChar.Head:FindFirstChild("face") then CloneChar.Head:FindFirstChild("face").Transparency = 1 end
+        --if workspace[game:GetService("Players").LocalPlayer.Name].Head:FindFirstChild("face") then workspace[game:GetService("Players").LocalPlayer.Name].Head:FindFirstChild("face").Parent = CloneChar.Head end
+    
+        FalseChar:Destroy()
+    
+        local DeadChar = workspace[game:GetService("Players").LocalPlayer.Name]
+    
+        local LVecPart = Instance.new("Part", workspace) LVecPart.CanCollide = false LVecPart.Transparency = 1
+        local CONVEC
+        local function VECTORUNIT()
+        if HumanDied then CONVEC:Disconnect(); return end
+        local lookVec = workspace.Camera.CFrame.lookVector
+        local Root = CloneChar["HumanoidRootPart"]
+        LVecPart.Position = Root.Position
+        LVecPart.CFrame = CFrame.new(LVecPart.Position, Vector3.new(lookVec.X * 9999, lookVec.Y, lookVec.Z * 9999))
+        end
+        CONVEC = game:GetService("RunService").Heartbeat:Connect(VECTORUNIT)
+    
+        local CONDOWN
+        local WDown, ADown, SDown, DDown, SpaceDown = false, false, false, false, false
+        local function KEYDOWN(_,Processed) 
+        if HumanDied then CONDOWN:Disconnect(); return end
+        if Processed ~= true then
+        local Key = _.KeyCode
+        if Key == Enum.KeyCode.W then
+        WDown = true end
+        if Key == Enum.KeyCode.A then
+        ADown = true end
+        if Key == Enum.KeyCode.S then
+        SDown = true end
+        if Key == Enum.KeyCode.D then
+        DDown = true end
+        if Key == Enum.KeyCode.Space then
+        SpaceDown = true end end end
+        CONDOWN = game:GetService("UserInputService").InputBegan:Connect(KEYDOWN)
+    
+        local CONUP
+        local function KEYUP(_)
+        if HumanDied then CONUP:Disconnect(); return end
+        local Key = _.KeyCode
+        if Key == Enum.KeyCode.W then
+        WDown = false end
+        if Key == Enum.KeyCode.A then
+        ADown = false end
+        if Key == Enum.KeyCode.S then
+        SDown = false end
+        if Key == Enum.KeyCode.D then
+        DDown = false end
+        if Key == Enum.KeyCode.Space then
+        SpaceDown = false end end
+        CONUP = game:GetService("UserInputService").InputEnded:Connect(KEYUP)
+    
+        local function MoveClone(X,Y,Z)
+        LVecPart.CFrame = LVecPart.CFrame * CFrame.new(-X,Y,-Z)
+        workspace["non"].Humanoid.WalkToPoint = LVecPart.Position
+        end
+        
+        _G.permadeath = true
+    
+        coroutine.wrap(function() 
+        while true do game:GetService("RunService").RenderStepped:Wait()
+        if HumanDied then break end
+        if WDown then MoveClone(0,0,1e4) end
+        if ADown then MoveClone(1e4,0,0) end
+        if SDown then MoveClone(0,0,-1e4) end
+        if DDown then MoveClone(-1e4,0,0) end
+        if SpaceDown then CloneChar["Humanoid"].Jump = true end
+        if WDown ~= true and ADown ~= true and SDown ~= true and DDown ~= true then
+        workspace["non"].Humanoid.WalkToPoint = workspace["non"].HumanoidRootPart.Position end
+        end 
+        end)()
+    
+        local con
+        function UnCollide()
+            if HumanDied then con:Disconnect(); return end
+            for _,Parts in next, CloneChar:GetDescendants() do
+                if Parts:IsA("BasePart") then
+                    Parts.CanCollide = false 
+                end 
+            end
+            for _,Parts in next, DeadChar:GetDescendants() do
+                if Parts:IsA("BasePart") then
+                Parts.CanCollide = false
+                end 
+            end 
+        end
+        con = game:GetService("RunService").Stepped:Connect(UnCollide)
+    
+        local resetBindable = Instance.new("BindableEvent")
+        resetBindable.Event:connect(function()
+            game:GetService("StarterGui"):SetCore("ResetButtonCallback", true)
+            resetBindable:Destroy()
+            CloneChar.Humanoid.Health = 0
+        end)
+        game:GetService("StarterGui"):SetCore("ResetButtonCallback", resetBindable)
+    
+        coroutine.wrap(function()
+            while true do
+                game:GetService("RunService").RenderStepped:wait()
+                if not CloneChar or not CloneChar:FindFirstChild("Head") or not CloneChar:FindFirstChild("Humanoid") or CloneChar:FindFirstChild("Humanoid").Health <= 0 then 
+                    HumanDied = true
+                    pcall(function()
+                        game.Players.LocalPlayer.Character = CloneChar
+                        CloneChar:Destroy()
+                        game.Players.LocalPlayer.Character = DeadChar
+                        if resetBindable then
+                            game:GetService("StarterGui"):SetCore("ResetButtonCallback", true)
+                            resetBindable:Destroy()
+                        end
+                        _G.permadeath = false
+                        DeadChar.Humanoid.Health = 0
+                    end)
+                    break
+                end		
+            end
+        end)()
+    
+        SCIFIMOVIELOL(DeadChar["Head"],CloneChar["Head"],Vector3.new(0,0,0),Vector3.new(0,0,0))
+        SCIFIMOVIELOL(DeadChar["Torso"],CloneChar["Torso"],Vector3.new(0,0,0),Vector3.new(0,0,0))
+        SCIFIMOVIELOL(DeadChar["Left Arm"],CloneChar["Left Arm"],Vector3.new(0,0,0),Vector3.new(0,0,0))
+        SCIFIMOVIELOL(DeadChar["Right Arm"],CloneChar["Right Arm"],Vector3.new(0,0,0),Vector3.new(0,0,0))
+        SCIFIMOVIELOL(DeadChar["Left Leg"],CloneChar["Left Leg"],Vector3.new(0,0,0),Vector3.new(0,0,0))
+        SCIFIMOVIELOL(DeadChar["Right Leg"],CloneChar["Right Leg"],Vector3.new(0,0,0),Vector3.new(0,0,0))
+        --SCIFIMOVIELOL(DeadChar["HumanoidRootPart"],CloneChar["HumanoidRootPart"],Vector3.new(0,0,0),Vector3.new(0,0,0))
+    
+    local hrp = DeadChar.HumanoidRootPart
+    local attack = false
+    
+    
+    
+    hrp.Name = "HumanoidRootPart"
+    hrp.Transparency = 0.5
+    hrp.Anchored = false
+    if hrp:FindFirstChildOfClass("AlignPosition") then
+        hrp:FindFirstChildOfClass("AlignPosition"):Destroy()
+    end
+    if hrp:FindFirstChildOfClass("AlignOrientation") then
+        hrp:FindFirstChildOfClass("AlignOrientation"):Destroy()
+    end
+    local bf = Instance.new("BodyForce", hrp)
+    bf.Force = Vector3.new(0, 549.36, 0)
+    local flinger = Instance.new("BodyAngularVelocity",hrp)
+    flinger.MaxTorque = Vector3.new(math.huge,math.huge,math.huge)
+    flinger.P = 1000000000000000000000000000
+    flinger.AngularVelocity = Vector3.new(10000,10000,10000)
+    
+    _G.RanScript = false
+    
+    
+    spawn(function()
+        while game:GetService("RunService").Heartbeat:Wait() do
+            if _G.RanScript ~= true then
+                hrp.Position = CloneChar.HumanoidRootPart.Position
+            end
+        end
+    end)
+    
+    
+        for _,v in next, DeadChar:GetChildren() do
+            if v:IsA("Accessory") then
+                for i,wa in pairs(v:GetDescendants())do
+                    if wa:IsA("Attachment") or wa:IsA("Weld") then
+                        wa:Destroy()
+                    end
+                end
+                v.Handle.CanCollide = true
+                SCIFIMOVIELOL(v.Handle,CloneChar[v.Name].Handle,Vector3.new(0,0,0),Vector3.new(0,0,0))
+            end
+        end
+    
+        for _,BodyParts in next, CloneChar:GetDescendants() do
+        if BodyParts:IsA("BasePart") or BodyParts:IsA("Part") then
+        BodyParts.Transparency = 1 end end
+        --game.Players.LocalPlayer.Character=workspace.non
+
+end)
+
+local hotelroom = Instance.new("TextButton")
+hotelroom.Name = "hotelroom"
+hotelroom.Parent = FreeScripts
+hotelroom.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+hotelroom.BorderSizePixel = 0
+hotelroom.Position = UDim2.new(0, 0, 0, 0)
+hotelroom.Size = UDim2.new(0, 451, 0, 34)
+hotelroom.AutoButtonColor = false
+hotelroom.Font = Enum.Font.Gotham
+hotelroom.Text = "Beggin"
+hotelroom.TextColor3 = Color3.fromRGB(255, 255, 255)
+hotelroom.TextSize = 14.000
+hotelroom.MouseButton1Click:Connect(function()
+Check()
+	_G.scriptran=true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/TypicalHub/main/check"))()
+end)
+
+local R15 = Instance.new("TextButton")
+R15.Name = "R15"
+R15.Parent = Reanimations
+R15.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+R15.BorderSizePixel = 0
+R15.Position = UDim2.new(0, 0, 0, 0)
+R15.Size = UDim2.new(0, 451, 0, 34)
+R15.AutoButtonColor = false
+R15.Font = Enum.Font.Gotham
+R15.Text = "R15 Animation Player"
+R15.TextColor3 = Color3.fromRGB(255, 255, 255)
+R15.TextSize = 14.000
+R15.MouseButton1Click:Connect(function()
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mgamingpro/TypicalHub/main/r15"))()
+end)
+
+wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+Title = "SERVER";
+Text = "Loaded BozoHub.."; 
+Duration = 6;
+})
