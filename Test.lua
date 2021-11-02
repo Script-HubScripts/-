@@ -1,1 +1,1 @@
-"Test" or "Test2"
+local KeyList = "Test" or "Test2"
