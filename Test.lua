@@ -1,3 +1,1 @@
-"Test"
-or
-"Test2"
+"Test" or "Test2"
